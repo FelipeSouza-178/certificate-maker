@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Poppins:wght@800&display=swap');
 
 :root {
-  --blue: #0379FF;
+  --blue: #0163C7;
   --light-blue: #9AC9FF;
   --dark-blue: #0261CC;
   --white: #fff;
@@ -13,7 +13,7 @@
 
 body {
   margin: 0;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 20px;
@@ -24,9 +24,8 @@ body {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  color: var(--light-blue);
+  color: var(--white);
   background-color: var(--blue);
-  background-image: url('data:image/svg+xml;utf8,<svg width="55" height="45" viewBox="0 0 55 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M5.49121 44.2515C5.49121 40.4116 7.02223 36.7289 9.74745 34.0137C12.4727 31.2985 16.1689 29.7731 20.0229 29.7731C23.877 29.7731 27.5732 31.2985 30.2984 34.0137C33.0236 36.7289 34.5546 40.4116 34.5546 44.2515M20.0229 20.724C20.0229 16.8841 21.5539 13.2014 24.2791 10.4862C27.0044 7.77095 30.7006 6.24554 34.5546 6.24554C38.4087 6.24554 42.1049 7.77095 44.8301 10.4862C47.5553 13.2014 49.0863 16.8841 49.0863 20.724V44.2515" stroke="%230261CC50" stroke-width="11"/></svg>');
   background-size: 160%;
   background-position: 90% 150%;
   background-repeat: no-repeat;
@@ -39,10 +38,8 @@ svg {
 }
 
 .content {
-  position: absolute;
-  top: 12rem;
-  right: 2.5rem;
-  width: 65%;
+  margin-top: 120px;
+  margin-left: 200px;
 }
 
 .content * {
@@ -64,16 +61,38 @@ svg {
 }
 
 .byline {
-  position: absolute;
-  right: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-left: 120px;
+  color: white;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.date {
-  position: absolute;
-  bottom: 2.5rem;
-  font-size: 0.75rem;
+.data{
+  text-align: right;
+  margin-top: 40px;
 }
 
-.bold {
-  font-weight: 500;
+.info{
+  text-align: justify;
+}
+
+.logo{
+  position: absolute;
+  translate: 13px -480px;
+}
+
+.signature{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.signature .image{
+  margin-top: -120px;
+}
+
+.signature .role{
+  margin-top: -10px;
 }
